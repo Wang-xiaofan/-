@@ -1,0 +1,166 @@
+一、
+
+	<a>标签：超链接标签
+	<img>标签：src---图片的路径（绝对路径和相对路径）、alt属性---当图片不能正常显示时的文字替换
+	
+	<div>：区域标签
+	<ul>：无序列表
+		|-  li：列表项
+		
+	<ol>：有序列表
+		|-  li：列表项
+			
+		快速书写(Sublime):ol>li*n    ---n表示整数
+						  ul>li*n
+		
+		
+	<table> 表格： 
+		|-  tr
+		|-  td
+		|-  th  (表头)
+			
+		格式：
+		<table>
+			<tr>(行)
+				<td></td>(列)
+			</tr>
+		</table>
+		快速书写(Sublime)：table>tr*n>td*n   ----n表示整数
+		
+		
+	<from> 表单：是一个区域，采集用户信息
+	       表单元素：按钮，文本框，复选框，下拉列表...
+		   
+		   格式：
+		   <form action="数据处理网页">  ---action表示将表单收集的数据交给哪个网页处理
+				表单元素...
+				<input type="" />    ---type="text"--文本框  or  type="password"--密码框  or  type="submit"--提交按钮  or   type="reset"--重置...
+				
+		   </from>
+		   
+		   
+	<select>下拉列表：
+
+			格式：
+				<select>
+					<option></option>
+				</select>
+	
+	 <textarea>文本域：
+	 
+	 
+	 Web语义化：
+		em:斜体强调
+		trong:加粗
+		dl:带有描述性的自定义列表
+			dt:列表项
+		dp:
+		
+		   
+		   
+		   
+		   
+	
+	
+	CSS样式：
+		行内样式：<p style=""></p>
+		内嵌样式:
+		<head>
+			<style type="text/css">
+				P{
+					color:red;
+				}
+			</style>
+		
+		</head>
+		
+		单独样式表文件：xxx.css
+		<head>
+			<link rel="stylesheet" href="样式表文件路径" />---样式引用
+		</head>
+		
+		
+	CSS选择器：
+		选择器类型：
+			标签选择器：
+						body{样式内容}
+						h1{样式内容}
+						p{样式内容}
+						hr{样式内容}...
+			
+			类别选择器：
+						.xxx{样式内容}
+						 html代码部分：
+						 <body>
+							<p class="xxx">内容</p>
+						 </body>
+						 
+			ID选择器： 唯一性
+						#xxx{样式内容}
+						thml代码部分：
+						<body>
+							<p id="xxx">内容</p>
+						</body>
+			
+			ID选择器和类别选择器的区别：ID选择器被当前页面唯一的引用一次。类别选择器可以多次引用，作用于多个元素上。
+			
+			嵌套声明：---空格隔开---   表示标签<p>里的<span>标签的样式
+					例：
+						<style type="text/css">
+							p span{样式内容}
+						</style>
+						
+						html代码部分：
+							<body>
+								<p><span>内容</span></p>
+							
+							</body>
+			
+			集体声明：  ---逗号隔开---
+					例：
+						<style type="text/css">
+							h1,p{样式内容}
+						</style>
+						
+						html代码部分：
+							<body>
+								<h1>内容</h1>
+								<p>内容</p>
+								.
+								.
+								.
+							</body>
+			
+			全局声明：
+					例：
+						<style type="text/css">
+							*{样式内容}
+						</style>
+						
+						html代码部分：
+							<body>
+								<h1>内容</h1>
+								<p>内容</p>
+								<h2>内容</h2>
+								.
+								.
+								.
+							
+							</body>
+			
+			
+			选择器的混合使用:
+							例：
+								<body>
+									<p id="xxx" class="x xx xxx">内容</p>------>Id选择器唯一引用，类别选择器可以引用多个，用空格隔开
+								
+								</body>
+			
+			
+	文本文字样式：		
+			
+			
+			
+			
+			
+			
